@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background: #490404;
+    height: 100px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.header__logo {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+}
+
+.header__link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+.hero {
+    display: flex;
+    margin-top: 79px;
+}
+
+.hero__title {
+    max-width: 480px;
+    min-height: 122px;
+    font-family: Roboto;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-bottom: 43px;
+}
+
+.hero__subtitle {
+    max-width: 337px;
+    height: 77px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.hero__btn {
+    width: 203.59px;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+    background: #8DFD1B;
+    border: none;
+    cursor: pointer;
+    margin-top: 155px;
+}
+
+.hero__btn:hover {
+    background: #66c00c;
+}
+
+.hero__btn:active {
+    box-shadow: 15px 15px 15px #66c00c9a;
+}
+
+.hero__img {
+    width: 664.39px;
+    height: 438px;
+}
+
+.hero__img:hover {
+    border: 2px solid #490404;
+}
+
+.roadmap {
+    margin-top: 228px;
+    position: relative;
+}
+
+.roadmap__title {
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-bottom: 102px;
+}
+
+.roadmap__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.roadmap__card {
+    width: 540px;
+    height: 271px;
+    background: rgba(99, 90, 90, 0.356);
+    border: 1px solid #8DFD1B;
+}
+
+.divider {
+    width: 1px;
+    height: 40px;
+    background: #8DFD1B;
+}
+
+.card__top {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #8DFD1B;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+}
+
+.top__number {
+    width: 45px;
+    height: 45px;
+    background-color: #8DFD1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+
+}
+
+.top__title {
+    width: 234px;
+    height: 28px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.card__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.bottom__left p:nth-child(1) {
+    width: 133px;
+    height: 32px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.bottom__left p:nth-child(2) {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.bottom__left p:nth-child(3) {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.bottom__right {
+    margin-top: 30px;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+
+.roadmap__position {
+    position: absolute;
+    width: 572px;
+    height: 572px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.roadmap__position2 {
+    position: absolute;
+    width: 572px;
+    height: 572px;
+    top: 300px;
+    right: 0;
+    /* left: 0; */
+    z-index: -1;
+}
+
+.roadmap__position3 {
+    position: absolute;
+    width: 572px;
+    height: 572px;
+    /* right: 0; */
+    bottom: -200px;
+    /* left: 0; */
+    z-index: -1;
+}
+
+.collection {
+    margin-top: 216px;
+}
+
+.collection__our {
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-bottom: 208px;
+}
+
+.collection__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection__title {
+    width: 297px;
+    height: 46px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.collection__asked {
+    width: 153px;
+    height: 46px;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #A8A8A8;
+}
+
+.collection__question {
+    width: 258px;
+    height: 46px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+.collection__img {
+    width: 360px;
+    height: 360px;
+    margin-top: 141px;
+}
+
+.collection__top {
+    margin-bottom: 162px;
+}
+
+.collection__input {
+    width: 578px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: rgba(128, 128, 128, 0.295);
+}
+
+.collection__input__text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.artist {
+    margin-top: 96px;
+}
+
+.artist__title {
+    font-family: Roboto;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-bottom: 96px;
+}
+
+
+
+.artist__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist__card {
+    max-width: 320px;
+    width: 100%;
+    min-height: 552px;
+}
+
+.artist__name {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
+
+.artist__job {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #8DFD1B;
+    margin-bottom: 22px;
+}
+
+.artist__logos {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 21px;
+}
+
+.artist__text {
+    width: 238px;
+    height: 58px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.discord {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.discord__left {
+    margin-top: 117px;
+    margin-bottom: 117px;
+    margin-left: 20px;
+}
+
+.discord__title {
+    width: 286px;
+    height: 61px;
+    font-family: Roboto;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.descord__span {
+    width: 263px;
+    height: 61px;
+    font-family: Roboto;
+    font-size: 51px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8DFD1B;
+}
+
+.discord__text {
+    width: 345px;
+    height: 77px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin-top: 129px;
+}
+
+.discord__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 213px;
+    height: 43px;
+    background: #8DFD1B;
+    border: none;
+    margin-top: 35px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.discord__btn:hover {
+    background: #66c00c;
+    border-radius: 10px;
+}
+
+.discord__btn:active {
+    box-shadow: 15px 15px 15px #66c00c9a;
+}
+
+.discord__right {
+    margin-top: 67px;
+    margin-bottom: 146px;
+}
+
+.footer {
+    background: #42006A;
+    height: 238px;
+}
+
+.footer__meta{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 101px;
+}
+
+.footer__left{
+    width: 103px;
+    height: 24px;
+}
+
+
+.footer__right{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.footer__wave{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+margin-bottom: 29px;
+}
+
+.footer__stories{
+    font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+
+.footer__powe{
+    /* width: 88px; */
+    font-family: Roboto;
+font-size: 13px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+margin-bottom: 29px;
+}
+
+.footer__web{
+    margin-left: 25px;
+}
+
+.footer__logo {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+}
